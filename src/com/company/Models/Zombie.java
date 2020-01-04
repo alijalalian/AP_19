@@ -1,6 +1,6 @@
 package com.company.Models;
 
-public class Zombie {
+public class Zombie extends Card {
     private int speed;
     private int cost;
     private int shieldHealth;
@@ -28,4 +28,5 @@ public class Zombie {
     public void setShieldHealth(int shieldHealth) {
         this.shieldHealth = shieldHealth;
     }
+    
 }

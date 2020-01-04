@@ -1,21 +1,39 @@
 package com.company.Models;
 
-import java.util.ArrayList;
+    import java.util.Scanner;
 
-public class LoginMenu {
-    private ArrayList<Player> players;
+    public class LoginMain {
 
-    public void login(){}
+        public static void main(String[] args) {
 
-    public void createAccount(){}
+            String Username;
+            String Password;
 
-    public void showLeaderBoard(){};
+            Password = "123";
+            Username = "wisdom";
 
-    public ArrayList<Player> getPlayers() {
-        return players;
+            Scanner input1 = new Scanner(System.in);
+            System.out.println("Enter Username : ");
+            String username = input1.next();
+
+            Scanner input2 = new Scanner(System.in);
+            System.out.println("Enter Password : ");
+            String password = input2.next();
+
+            if (username.equals(Username) && password.equals(Password)) {
+
+                System.out.println("Access Granted! Welcome!");
+            }
+
+            else if (username.equals(Username)) {
+                System.out.println("Invalid Password!");
+            } else if (password.equals(Password)) {
+                System.out.println("Invalid Username!");
+            } else {
+                System.out.println("Invalid Username & Password!");
+            }
+
+        }
+
     }
 
-    public void setPlayers(ArrayList<Player> players) {
-        this.players = players;
-    }
-}

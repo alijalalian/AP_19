@@ -1,69 +1,79 @@
 package com.company.Models;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class Player {
-    int killedZombies;
-    String userName;
-    String password;
-    ArrayList<Plant> boughtPlants;
-    ArrayList<Zombie> boughtZombies;
-    ArrayList<Plant> plantsHand;
-    ArrayList<Zombie> zombiesHand;
+	public int getMoney() {
+		return money;
+	}
 
-    public int getKilledZombies() {
-        return killedZombies;
-    }
+	public void setMoney(int money) {
+		this.money = money;
+	}
 
-    public void setKilledZombies(int killedZombies) {
-        this.killedZombies = killedZombies;
-    }
+	private int money;
+	private int killedZombies;
+	private String userName;
+	private String password;
+	private ArrayList<Plant> boughtPlants;
+	private ArrayList<Zombie> boughtZombies;
+	private ArrayList<Plant> plantsHand;
+	private ArrayList<Zombie> zombiesHand;
 
-    public String getUserName() {
-        return userName;
-    }
+	public int getKilledZombies() {
+		return killedZombies;
+	}
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+	public void setKilledZombies(int killedZombies) {
+		this.killedZombies = killedZombies;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public String getUserName() {
+		return userName;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
-    public ArrayList<Plant> getBoughtPlants() {
-        return boughtPlants;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setBoughtPlants(ArrayList<Plant> boughtPlants) {
-        this.boughtPlants = boughtPlants;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public ArrayList<Zombie> getBoughtZombies() {
-        return boughtZombies;
-    }
+	public ArrayList<Plant> getBoughtPlants() {
+		return boughtPlants;
+	}
 
-    public void setBoughtZombies(ArrayList<Zombie> boughtZombies) {
-        this.boughtZombies = boughtZombies;
-    }
+	public void setBoughtPlants(ArrayList<Plant> boughtPlants) {
+		this.boughtPlants = boughtPlants;
+	}
 
-    public ArrayList<Plant> getPlantsHand() {
-        return plantsHand;
-    }
+	public ArrayList<Zombie> getBoughtZombies() {
+		return boughtZombies;
+	}
 
-    public void setPlantsHand(ArrayList<Plant> plantsHand) {
-        this.plantsHand = plantsHand;
-    }
+	public void setBoughtZombies(ArrayList<Zombie> boughtZombies) {
+		this.boughtZombies = boughtZombies;
+	}
 
-    public ArrayList<Zombie> getZombiesHand() {
-        return zombiesHand;
-    }
+	public ArrayList<Plant> getPlantsHand() {
+		return plantsHand;
+	}
 
-    public void setZombiesHand(ArrayList<Zombie> zombiesHand) {
-        this.zombiesHand = zombiesHand;
-    }
+	public void setPlantsHand(ArrayList<Plant> plantsHand) {
+		this.plantsHand = plantsHand;
+	}
+
+	public ArrayList<Zombie> getZombiesHand() {
+		return zombiesHand;
+	}
+
+	public void setZombiesHand(ArrayList<Zombie> zombiesHand) {
+		this.zombiesHand = zombiesHand;
+	}
 }

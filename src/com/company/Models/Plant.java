@@ -1,112 +1,113 @@
 package com.company.Models;
 
 public class Plant extends Card {
-    private int suns;
-    private int turn;
-    private int shotPerTurn;
-    private int speedReduction;
-    private int times;
-    private boolean isMelee;
-    private boolean isScarely;
-    private boolean hasForwardShooting;
-    private boolean hasBackwardShooting;
-    private boolean isActive;
-    private boolean idSeaweed;
-    private boolean isCat;
+	private int sunsProduction;
 
-    public int getSuns() {
-        return suns;
-    }
+	private int turn;
+	private int shotPerTurn;
+	private int speedReduction;
+	private int times;
+	private boolean isMelee;
+	private boolean isScarely;
+	private boolean hasForwardShooting;
+	private boolean hasBackwardShooting;
+	private boolean isActive;
+	private boolean idSeaweed;
+	private boolean isCat;
+	public int getShotPerTurn() {
+		return shotPerTurn;
+	}
 
-    public void setSuns(int suns) {
-        this.suns = suns;
-    }
+	public int getSpeedReduction() {
+		return speedReduction;
+	}
 
-    public int getTurn() {
-        return turn;
-    }
+	public int getSunsProduction() {
+		return sunsProduction;
+	}
 
-    public void setTurn(int turn) {
-        this.turn = turn;
-    }
+	public int getTimes() {
+		return times;
+	}
 
-    public int getShotPerTurn() {
-        return shotPerTurn;
-    }
+	public int getTurn() {
+		return turn;
+	}
 
-    public void setShotPerTurn(int shotPerTurn) {
-        this.shotPerTurn = shotPerTurn;
-    }
+	public boolean isActive() {
+		return isActive;
+	}
 
-    public int getSpeedReduction() {
-        return speedReduction;
-    }
+	public boolean isCat() {
+		return isCat;
+	}
 
-    public void setSpeedReduction(int speedReduction) {
-        this.speedReduction = speedReduction;
-    }
+	public boolean isHasBackwardShooting() {
+		return hasBackwardShooting;
+	}
 
-    public int getTimes() {
-        return times;
-    }
+	public boolean isHasForwardShooting() {
+		return hasForwardShooting;
+	}
 
-    public void setTimes(int times) {
-        this.times = times;
-    }
+	public boolean isIdSeaweed() {
+		return idSeaweed;
+	}
 
-    public boolean isMelee() {
-        return isMelee;
-    }
+	public boolean isMelee() {
+		return isMelee;
+	}
 
-    public void setMelee(boolean melee) {
-        isMelee = melee;
-    }
+	public boolean isScarely() {
+		return isScarely;
+	}
 
-    public boolean isScarely() {
-        return isScarely;
-    }
+	public void setActive(boolean active) {
+		isActive = active;
+	}
 
-    public void setScarely(boolean scarely) {
-        isScarely = scarely;
-    }
+	public void setCat(boolean cat) {
+		isCat = cat;
+	}
 
-    public boolean isHasForwardShooting() {
-        return hasForwardShooting;
-    }
+	public void setHasBackwardShooting(boolean hasBackwardShooting) {
+		this.hasBackwardShooting = hasBackwardShooting;
+	}
 
-    public void setHasForwardShooting(boolean hasForwardShooting) {
-        this.hasForwardShooting = hasForwardShooting;
-    }
+	public void setHasForwardShooting(boolean hasForwardShooting) {
+		this.hasForwardShooting = hasForwardShooting;
+	}
 
-    public boolean isHasBackwardShooting() {
-        return hasBackwardShooting;
-    }
+	public void setIdSeaweed(boolean idSeaweed) {
+		this.idSeaweed = idSeaweed;
+	}
 
-    public void setHasBackwardShooting(boolean hasBackwardShooting) {
-        this.hasBackwardShooting = hasBackwardShooting;
-    }
+	public void setMelee(boolean melee) {
+		isMelee = melee;
+	}
 
-    public boolean isActive() {
-        return isActive;
-    }
+	public void setScarely(boolean scarely) {
+		isScarely = scarely;
+	}
 
-    public void setActive(boolean active) {
-        isActive = active;
-    }
+	public void setShotPerTurn(int shotPerTurn) {
+		this.shotPerTurn = shotPerTurn;
+	}
 
-    public boolean isIdSeaweed() {
-        return idSeaweed;
-    }
+	public void setSpeedReduction(int speedReduction) {
+		this.speedReduction = speedReduction;
+	}
 
-    public void setIdSeaweed(boolean idSeaweed) {
-        this.idSeaweed = idSeaweed;
-    }
+	public void setSunsProduction(int suns) {
+		this.sunsProduction = sunsProduction;
+	}
 
-    public boolean isCat() {
-        return isCat;
-    }
+	public void setTimes(int times) {
+		this.times = times;
+	}
 
-    public void setCat(boolean cat) {
-        isCat = cat;
-    }
+	public void setTurn(int turn) {
+		this.turn = turn;
+	}
+
 }

@@ -2,105 +2,106 @@ package com.company.Models;
 
 import java.util.ArrayList;
 
-public class Card {
-    private ArrayList<Card> cards;
-    private int health;
-    private int damage;
-    private int price;
-    private int cost;
-    private int coordinateX;
-    private int coordinateY;
-    private int cooldown;
-    private String name;
-    private boolean isWater;
+public abstract class Card {
 
-    public ArrayList<Card> getCards() {
-        return cards;
-    }
+	private ArrayList<Card> cards;
+	private int health;
+	private int damage;
+	private int price;
+	private int cost;
+	private int coordinateX;
+	private int coordinateY;
+	private int cooldown;
+	private String name;
+	private boolean isWater;
 
-    public void setCards(ArrayList<Card> cards) {
-        this.cards = cards;
-    }
+	public ArrayList<Card> getCards() {
+		return cards;
+	}
 
-    public int getHealth() {
-        return health;
-    }
+	public void setCards(ArrayList<Card> cards) {
+		this.cards = cards;
+	}
 
-    public void setHealth(int health) {
-        this.health = health;
-    }
+	public int getHealth() {
+		return health;
+	}
 
-    public int getDamage() {
-        return damage;
-    }
+	public void setHealth(int health) {
+		this.health = health;
+	}
 
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
+	public int getDamage() {
+		return damage;
+	}
 
-    public int getPrice() {
-        return price;
-    }
+	public void setDamage(int damage) {
+		this.damage = damage;
+	}
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+	public int getPrice() {
+		return price;
+	}
 
-    public int getCost() {
-        return cost;
-    }
+	public void setPrice(int price) {
+		this.price = price;
+	}
 
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
+	public int getCost() {
+		return cost;
+	}
 
-    public int getCoordinateX() {
-        return coordinateX;
-    }
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
 
-    public void setCoordinateX(int coordinateX) {
-        this.coordinateX = coordinateX;
-    }
+	public int getCoordinateX() {
+		return coordinateX;
+	}
 
-    public int getCoordinateY() {
-        return coordinateY;
-    }
+	public void setCoordinateX(int coordinateX) {
+		this.coordinateX = coordinateX;
+	}
 
-    public void setCoordinateY(int coordinateY) {
-        this.coordinateY = coordinateY;
-    }
+	public int getCoordinateY() {
+		return coordinateY;
+	}
 
-    public int getCooldown() {
-        return cooldown;
-    }
+	public void setCoordinateY(int coordinateY) {
+		this.coordinateY = coordinateY;
+	}
 
-    public void setCooldown(int cooldown) {
-        this.cooldown = cooldown;
-    }
+	public int getCooldown() {
+		return cooldown;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public void setCooldown(int cooldown) {
+		this.cooldown = cooldown;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public boolean isWater() {
-        return isWater;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public void setWater(boolean water) {
-        isWater = water;
-    }
+	public boolean isWater() {
+		return isWater;
+	}
 
-    public Card getCardByName(String name){
-        Card result = null;
-        for (Card card :
-                cards) {
-            if (card.name.equals(name))
-                result = card;
-        }
-        return result;
-    }
+	public void setWater(boolean water) {
+		isWater = water;
+	}
+
+	public Card getCardByName(String name){
+		Card result = null;
+		for (Card card :
+			cards) {
+			if (card.name.equals(name))
+				result = card;
+		}
+		return result;
+	}
 }

@@ -1,28 +1,54 @@
 package com.company.Models;
 
 public class Profile {
-    private Player player;
+	private Player player;
 
-    public void changePassword(){}
 
-    public void changeUsername(){
-    }
+	public void changePassword(String userName,String password) {
+		if ( checkUser(userName,password) ) {
+		player.setPassword(password);
+		} 
+	}
 
-    public void delete(){}
+	public void changeUsername(String password,String userName){
+		if ( checkUser(userName,password) ) {
+		player.setUserName(userName);
+		}
+	}
 
-    public void rename(){}
+	public boolean checkUser(String userName,String password) {
+		if ( player.getUserName().equals(userName) & player.getPassword().equals(password) ) {
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
 
-    public void show(){}
+	public void rename(String userName){
+		player.setUserName(userName);
+	}
 
-    public void help(){}
+	public String show(){
+		player.getUserName();
+		return player.getUserName();
+	}
+	
+	public void delete(String userName,String password) {
+		if(checkUser(userName,password)) {
+			player = null;
+		}
+	}
 
-    public void exit(){}
+	//public void help(){}
 
-    public Player getPlayer() {
-        return player;
-    }
+	//public void exit(){}
 
-    public void setPlayer(Player player) {
-        this.player = player;
-    }
+	public Player getPlayer() {
+		return player;
+	}
+
+	public void setPlayer(Player player) {
+		this.player = player;
+	}
 }
